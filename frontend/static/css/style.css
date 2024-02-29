@@ -1,0 +1,142 @@
+/* Estilos base para la aplicación */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #070707, #2b2e2f); /* Cambia los colores según tus preferencias */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6;
+}
+#app-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to right,rgb(65, 139, 159), #16241b ); /* Cambia los colores según tus preferencias */
+    box-shadow: 0 0 10px rgba(241, 238, 238, 0.1); /* Sombra suave para dar profundidad */
+    border-radius: 25px;
+}
+
+/* Estilos para la sección de contadores */
+#counters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.counter {
+    background: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 50%, #c2d595 50%, #96e6a1 100%);
+    box-shadow: 0 0 10px rgba(241, 238, 238, 0.1); /* Sombra suave para dar profundidad */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para la caja de texto de introducción */
+#text-introduction textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 5px;
+}
+
+/* Estilos para las etiquetas de respuesta del sistema */
+#system-responses label {
+    display: block;
+    background: linear-gradient(to top,rgb(172, 186, 189), #aab9af ); /* Cambia los colores según tus preferencias */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilos para los botones de acción */
+#action-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+    background: linear-gradient(to bottom, #d4fc79 0%, #96e6a1 100%); /* Un gradiente de verde claro a verde pastel */
+    color: #333;
+}
+/* Estilos para los botones de acción */
+#action-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+    color: rgb(22, 21, 21); /* Texto en blanco para todos los botones para mantener la coherencia */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color al interactuar */
+}
+
+#read-button {
+    background: #007bff; /* Azul */
+}
+
+#read-button:hover {
+    background: #0056b3; /* Un azul más oscuro al pasar el cursor */
+}
+
+#yes-button {
+    background: #d1dbd3; /* Verde */
+}
+
+#yes-button:hover {
+    background: #1e7e34; /* Un verde más oscuro al pasar el cursor */
+}
+
+#no-button {
+    background: #b89c9f; /* Rojo */
+}
+
+#no-button:hover {
+    background: #bd2130; /* Un rojo más oscuro al pasar el cursor */
+}
+
+#comprobar-button {
+    background: #be9165; /* Naranja */
+}
+
+#comprobar-button:hover {
+    background: #cc7000; /* Un naranja más oscuro al pasar el cursor */
+}
+
+/* Estilos para el control de velocidad y la selección de idioma */
+#speed-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(49, 30, 219, 0.1); /* Sombra suave para dar profundidad */;
+    margin-top: 10px;
+}
+
+/* Estilos para el control de lenguaje*/
+#language-selection {
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}
+
+#language-selection select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    #counters {
+        flex-direction: column;
+    }
+
+    .counter {
+        margin-bottom: 10px;
+    }
+
+    #action-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el tamaño de los elementos o la tipografía según sea necesario */
+}

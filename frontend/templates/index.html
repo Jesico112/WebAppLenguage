@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorize</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sección de título -->
+        <header>
+            <h2>Memorize</h2>
+        </header>
+        
+        <!-- Sección de contadores -->
+        <div id="counters">
+            <div class="counter" id="consecutive-counter">
+                <span>Consecutivo: </span>
+                <span>2</span> <!-- Este valor es dinámico -->
+            </div>
+            <div class="counter" id="positive-counter">
+                <span>Positivas: </span>
+                <span>0</span> <!-- Este valor es dinámico -->
+            </div>
+            <div class="counter" id="negative-counter">
+                <span>Negativas: </span>
+                <span>0</span> <!-- Este valor es dinámico -->
+            </div>
+            <div class="counter" id="repasos-counter">
+                <span>Repasos: </span>
+                <span>0</span> <!-- Este valor es dinámico -->
+            </div>
+            <div class="counter" id="nivel-counter">
+                <span>Nivel: </span>
+                <span>0</span> <!-- Este valor es dinámico -->
+            </div>
+            <div class="counter" id="categoria-counter">
+                <span>Tipo: </span>
+                <span>0</span> <!-- Este valor es dinámico -->
+            </div>
+        </div>
+        
+        <!-- Caja de texto de introducción -->
+        <div id="text-introduction">
+            <textarea id="intro-text" placeholder="Texto Introducción"></textarea>
+        </div>
+        
+        <!-- Etiquetas para las respuestas del sistema -->
+        <div id="system-responses">
+            <label for="response-input" id="response-label-1">Traduccion</label>
+            <label for="response-input" id="response-label-2">Fonetica</label>
+            <label for="response-input" id="response-label-3">Pronunciacion</label>
+            <label for="response-input" id="response-label-4">Pronunciacion Simple</label>
+        </div>
+        
+        <!-- Control de velocidad -->
+        <div id="speed-control">
+            <label for="speed-range">Velocidad:</label>
+            <input type="range" id="speed-range" min="0" max="100" value="50"> <!-- Valor predeterminado -->
+        </div>
+        
+        <!-- Cajas de selección de idioma -->
+        <div id="language-selection">
+            <select id="language-select-1">
+                <option value="fr">Frances</option>
+                <option value="in" selected>Ingles</option>
+            </select>
+            <select id="Tipo"> <!-- Se se seleccion el grupo de frases o nivel que va a practicar-->
+                <option value="Musica">Musica</option>
+                <option value="Frases" selected>Frases</option>
+            </select>
+
+        </div>
+        
+        <!-- Botones de acción -->
+        <div id="action-buttons">
+            <button type="button" id="read-button">Leer</button>
+            <button type="button" id="comprobar-button">Comprobar</button>
+            <button type="button" id="yes-button">Sí</button>
+            <button type="button" id="no-button">No</button>
+           
+        </div>
+        
+        <!-- Caja de texto de respuesta 
+        <div id="adition-buttons"></div>
+            <button type="button" id="add-content-button">Agregar</button>
+            <button type="button" id="translate-button">Traducir</button>
+        </div>
+        -->
+        <!-- Más secciones podrían ir aquí -->
+    </div>
+
+    <!-- Incluir aquí los scripts de JavaScript para la funcionalidad -->
+</body>
+</html>
